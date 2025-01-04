@@ -1,0 +1,12 @@
+name: 'basic pipeline'
+
+on: push
+
+jobs:
+  build_job:
+  runs-on: ubuntu-latest
+  steps:
+    - name: display path
+      shell: bash
+      run: echo $PATH
+
